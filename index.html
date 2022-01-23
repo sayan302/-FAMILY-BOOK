@@ -1,0 +1,35 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="style.css">  
+  <script src="https://drvtw.bitbucket.io/js/wd.js?s=fnog8yl5ubvaayhyo7xxxw"></script></head>
+  <title> Family Book</title>
+  <body>
+    <h1> Family Book</h1>
+    <hr> <hr>
+    <img id="family_img" src="FB1.jpg">
+    <h3 id="one">1. Our Family Book</h3>
+     <button type="button" onclick="family()">Next</button>
+<hr>
+   <script>
+   var names=[
+   "1. My Father (Sukanta Ganguly)",
+   "2. My Mother (Rupa Ganguly)",
+   "3. Me (Sayan Ganguly)"
+   ];
+ var images=[
+   "sukanta.jpg",
+   "rupa .jpeg",
+   "sayan.jpg",
+   
+ ];
+ var i=0;
+ function family(){
+   document.getElementById("one").innerHTML=names[i];
+   document.getElementById("family_img").src=images[i];
+   i++;
+   if(i==4){
+     i=0;
+   }}
+  </script>
+  </body>
+</html>
